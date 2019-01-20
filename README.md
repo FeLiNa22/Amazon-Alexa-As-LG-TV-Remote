@@ -1,4 +1,4 @@
-<meta name="google-site-verification" content="LrHWLLXv681fcRMGxh0lkzC_6US5tCrH0Te1vIeRs7k" />
+
 # Alexa-LG-TV-Controller
 
 Makes use of Klattimer's LGWebOSRemote module and Sinric's faux WEEMOS creator to control any smart LG TV with Alexa. This python script monitors Alexa's commands through Sinric, and then executes it using LG's nodejs API. It will allow you to turn on/off an LG tv and much more ... all from your Alexa device.
