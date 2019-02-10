@@ -1,9 +1,11 @@
 import lgtv
 
-LGparser(['scan'])
+lgtv.LGparser(['scan'])
 
 auth_ip = input('Enter IP of TV : ')
-LGparser(['auth',auth_ip])
 
-LGparser(['listChannels'])
-LGparser(['listApps'])
+lgtv.LGparser(['auth',auth_ip])
+
+
+lgtv.LGparser(['listChannels'])
+lgtv.LGparser(['listApps'])
