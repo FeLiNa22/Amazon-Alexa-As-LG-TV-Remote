@@ -12,7 +12,7 @@ Makes use of Klattimer's LGWebOSRemote module and Sinric's faux WEEMOS creator t
   * HU80KG.AEU (CineBeam 4K)
   * [please add more!]
 
-  Tested with python 2.7/3.7 on linux and windows. 
+  Tested with python 2.7 on linux. 
   
   ### Likely supports
 
@@ -50,10 +50,23 @@ Makes use of Klattimer's LGWebOSRemote module and Sinric's faux WEEMOS creator t
     # Now enter the directory with the files and type in command line 
     ------------------------------------->
     1.)  pip install -r requirements.txt
-    2.)  python setup.py
+    2.)  sudo python setup.py
     ------------------------------------->
     ---> This will scan for your LG tv and will show the IP address of all LG tv's on the local network
+    # Example :
+    {
+    "count": 1, 
+    "list": [
+        {
+            "address": "192.168.0.158", 
+            "model": "OLEDXXXXX", 
+            "uuid": "0b6405648-ccc7-ab45f-967d-8gd47f21346"
+        }
+    ], 
+    "result": "ok"
+    }
     ---> You will then be prompted to enter the ip address of the TV you want to authorise on
+    please enter  ip like "192.168.0.158" (make sure to use brackets)
     3.)  Enter IP address of TV, and a notification will pop up on the TV screen (click authorise on TV)
 
     4.)  Now open the Alexa.py file and edit line 80. Here you need to replace :
