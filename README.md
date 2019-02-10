@@ -66,7 +66,7 @@ Makes use of Klattimer's LGWebOSRemote module and Sinric's faux WEEMOS creator t
     "result": "ok"
     }
     ---> You will then be prompted to enter the ip address of the TV you want to authorise on
-    please enter  ip like "192.168.0.158" (make sure to use brackets)
+    please enter  ip like '192.168.0.158' (make sure to use brackets)
     3.)  Enter IP address of TV, and a notification will pop up on the TV screen (click authorise on TV)
 
     4.)  Now open the Alexa.py file and edit line 80. Here you need to replace :
