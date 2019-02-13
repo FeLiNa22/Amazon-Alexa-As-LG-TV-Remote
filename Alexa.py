@@ -78,7 +78,7 @@ def on_open(ws):
 def initiate():
     #websocket.enableTrace(True)
     api = ' enter-api-here  '
-    ws = websocket.WebSocketApp("ws://iot.sinric.com/",header={'Authorization:' +  base64.b64encode('apikey:   +' api '+      ')},on_message = on_message,on_error = on_error, on_close = on_close)
+    ws = websocket.WebSocketApp("ws://iot.sinric.com/",header={'Authorization:' +  base64.b64encode('apikey:   '+ api +'      ')},on_message = on_message,on_error = on_error, on_close = on_close)
     ws.on_open = on_open
 	
     ws.run_forever()
