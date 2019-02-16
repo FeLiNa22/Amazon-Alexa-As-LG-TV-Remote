@@ -12,8 +12,12 @@ def on_message(ws, msg):
     json_data=json.loads(msg)
     action =  json_data['action']
 
-    if(action == "setPowerState") :
-        lgtv.LGparser(['off'])
+     if(action == "setPowerState") :
+	power = json_data["value"]
+	if (power == "OFF"):
+	    lgtv.LGparser(['off'])
+	else:
+	    lgtv.LGparser(['on'])
                 
     elif(action == "SetMute") :
         mute = json_data["value"]["mute"]
