@@ -78,7 +78,8 @@ Makes use of Klattimer's LGWebOSRemote module and Sinric's faux WEEMOS creator t
     5.)  The final step is to start the Alexa.py file : 
               python Alexa.py
          or to run in the background once terminal closes. Use: 
-              nohup python Alexa.py
+              chmod +x Alexa.py
+              nohup python Alexa.py &
   ## FeLiNa
  
   Once all the steps above have been completed, and the python script is running, try telling your Alexa device to change your tv volume
