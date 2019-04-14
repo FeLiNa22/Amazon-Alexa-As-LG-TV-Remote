@@ -76,9 +76,9 @@ Makes use of Klattimer's LGWebOSRemote module and Sinric's faux WEEMOS creator t
     line 80 | api = '65a23cd9-2e5d-495c-b4bd-5abfgh3l60345'
 
     5.)  The final step is to start the Alexa.py file : 
-              python Alexa.py
+              sudo python Alexa.py
          or to run in the background once terminal closes. Use: 
-              chmod +x Alexa.py
+              sudo chmod +x Alexa.py
               nohup python /full/path/to/Alexa.py &
               logout
   ## FeLiNa
