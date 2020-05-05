@@ -109,9 +109,9 @@ def LGparser(AlexaCommand):
                     AlexaCommand[1] = searchApps(AlexaCommand[1])
                 args = parseargs(AlexaCommand[0], AlexaCommand[1:])
             except Exception as e:
-                usage(e.message)
-	    ws.connect()
-    	    ws.exec_command(AlexaCommand[0], args)
-    	    ws.run_forever()
+                usage(e)
+            ws.connect()
+            ws.exec_command(AlexaCommand[0], args)
+            ws.run_forever()
         except KeyboardInterrupt:
             ws.close()
